@@ -16,6 +16,13 @@ public class ListApp {
 		Rectangle r100 = rList.get(0);
 		r100.draw();
 
+		for (int i = 0; i < rList.size(); i++) {
+			/*
+			 * Rectangle r = rList.get(i); r.draw();
+			 */
+			rList.get(i).draw();
+		}
+
 		System.out.println(rList.size());
 
 		System.out.println("=========================================");
@@ -31,6 +38,13 @@ public class ListApp {
 		Circle c100 = cList.get(0);
 		c100.draw();
 
+		for (int i = 0; i < cList.size(); i++) {
+			/*
+			 * Circle c = cList.get(i); c.draw();
+			 */
+			cList.get(i).draw();
+		}
+
 		System.out.println(cList.size());
 
 		System.out.println("=========================================");
@@ -45,6 +59,13 @@ public class ListApp {
 
 		Triangle t100 = tList.get(0);
 		t100.draw();
+
+		for (int i = 0; i < tList.size(); i++) {
+			/*
+			 * Triangle t = tList.get(i); t.draw();
+			 */
+			tList.get(i).draw();
+		}
 
 		System.out.println(tList.size());
 

@@ -18,22 +18,6 @@ public class CircleList {
 		this.crtPos = crtPos;
 	}
 
-	public Circle[] getcArr() {
-		return cArr;
-	}
-
-	public void setcArr(Circle[] cArr) {
-		this.cArr = cArr;
-	}
-
-	public int getCrtPos() {
-		return crtPos;
-	}
-
-	public void setCrtPos(int crtPos) {
-		this.crtPos = crtPos;
-	}
-
 	public void add(Circle c) {
 		cArr[crtPos] = c;
 		crtPos++;

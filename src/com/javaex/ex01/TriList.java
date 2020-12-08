@@ -17,22 +17,6 @@ public class TriList {
 		this.crtPos = crtPos;
 	}
 
-	public Triangle[] gettArr() {
-		return tArr;
-	}
-
-	public void settArr(Triangle[] tArr) {
-		this.tArr = tArr;
-	}
-
-	public int getCrtPos() {
-		return crtPos;
-	}
-
-	public void setCrtPos(int crtPos) {
-		this.crtPos = crtPos;
-	}
-
 	public void add(Triangle t) {
 		tArr[crtPos] = t;
 		crtPos++;

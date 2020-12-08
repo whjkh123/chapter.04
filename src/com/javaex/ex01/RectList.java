@@ -15,22 +15,6 @@ public class RectList {
 		this.crtPos = crtPos;
 	}
 
-	public Rectangle[] getrArr() {
-		return rArr;
-	}
-
-	public void setrArr(Rectangle[] rArr) {
-		this.rArr = rArr;
-	}
-
-	public int getCrtPos() {
-		return crtPos;
-	}
-
-	public void setCrtPos(int crtPos) {
-		this.crtPos = crtPos;
-	}
-
 	public void add(Rectangle r) {
 		rArr[crtPos] = r;
 		crtPos++;

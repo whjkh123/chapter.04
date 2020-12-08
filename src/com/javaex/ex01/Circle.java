@@ -12,16 +12,8 @@ public class Circle {
 		this.radius = radius;
 	}
 
-	public int getRadius() {
-		return radius;
-	}
-
-	public void setRadius(int radius) {
-		this.radius = radius;
-	}
-
 	public void draw() {
-		System.out.println("원을(를) 그렸습니다.");
+		System.out.println("원 [반지름: " + radius + "] 을(를) 그렸습니다.");
 	}
 
 	@Override
