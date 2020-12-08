@@ -63,6 +63,31 @@ public class ListApp {
 			cList.get(i).draw();
 		}
 
+		System.out.println("=========================================");
+
+		Circle c03 = new Circle(9);
+		cList.add(0, c03);// cList.add(index index, element); > [0]번 자리에 c03 데이터 추가
+
+		for (int i = 0; i < cList.size(); i++) {
+			cList.get(i).draw();
+		}
+
+		System.out.println("=========================================");
+
+		cList.remove(2);// cList.remove(int index); > [1]번 자리 데이터 삭제
+
+		for (int i = 0; i < cList.size(); i++) {
+			cList.get(i).draw();
+		}
+
+		System.out.println("=========================================");
+
+		cList.remove(c01);// cList.remove(Object o); > [c01] 데이터 삭제
+
+		for (int i = 0; i < cList.size(); i++) {
+			cList.get(i).draw();
+		}
+
 		System.out.println("================Triangle=================");
 		// LinkedList
 		LinkedList<Triangle> tList = new LinkedList<Triangle>();
@@ -73,6 +98,40 @@ public class ListApp {
 		tList.add(t01);
 		tList.add(t02);
 		// tList.add(c01); > 이 상황을 방지하기 위한 제네릭
+
+		for (int i = 0; i < tList.size(); i++) {
+			tList.get(i).draw();
+		}
+
+		System.out.println("=========================================");
+
+		Triangle t03 = new Triangle(6, 6);
+
+		tList.add(t03);
+
+		for (int i = 0; i < tList.size(); i++) {
+			tList.get(i).draw();
+		}
+
+		System.out.println("=========================================");
+
+		tList.add(3, t03);
+
+		for (int i = 0; i < tList.size(); i++) {
+			tList.get(i).draw();
+		}
+
+		System.out.println("=========================================");
+
+		tList.remove(0);
+
+		for (int i = 0; i < tList.size(); i++) {
+			tList.get(i).draw();
+		}
+
+		System.out.println("=========================================");
+
+		tList.remove(r03);
 
 		for (int i = 0; i < tList.size(); i++) {
 			tList.get(i).draw();
