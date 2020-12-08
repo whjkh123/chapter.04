@@ -131,7 +131,7 @@ public class ListApp {
 
 		System.out.println("=========================================");
 
-		tList.remove(r03);
+		tList.remove(t03);
 
 		for (int i = 0; i < tList.size(); i++) {
 			tList.get(i).draw();
