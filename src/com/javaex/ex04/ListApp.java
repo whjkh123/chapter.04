@@ -2,13 +2,17 @@ package com.javaex.ex04;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class ListApp {
 
 	public static void main(String[] args) {
 
 		// ArrayList
-		ArrayList<Rectangle> rList = new ArrayList<Rectangle>();
+		// ArrayList<Rectangle> rList = new ArrayList<Rectangle>();
+		List<Rectangle> rList = new ArrayList<Rectangle>();
+
+		System.out.println("================Rectangle================");
 
 		Rectangle r01 = new Rectangle(3, 3);
 		Rectangle r02 = new Rectangle(5, 5);
@@ -22,7 +26,7 @@ public class ListApp {
 		r.draw();
 		System.out.println(r.toString());
 
-		System.out.println("================Rectangle================");
+		System.out.println("=========================================");
 
 		Rectangle r03 = new Rectangle(7, 7);
 
@@ -48,9 +52,12 @@ public class ListApp {
 			rList.get(i).draw();
 		}
 
+		System.out.println(rList.toString());
+
 		System.out.println("==================Cirlce=================");
 
-		ArrayList<Circle> cList = new ArrayList<Circle>();
+		// ArrayList<Circle> cList = new ArrayList<Circle>();
+		List<Circle> cList = new ArrayList<Circle>();
 
 		Circle c01 = new Circle(5);
 		Circle c02 = new Circle(7);
@@ -88,9 +95,12 @@ public class ListApp {
 			cList.get(i).draw();
 		}
 
+		System.out.println(cList.toString());
+
 		System.out.println("================Triangle=================");
 		// LinkedList
-		LinkedList<Triangle> tList = new LinkedList<Triangle>();
+		// LinkedList<Triangle> tList = new LinkedList<Triangle>();
+		List<Triangle> tList = new LinkedList<Triangle>();
 
 		Triangle t01 = new Triangle(2, 2);
 		Triangle t02 = new Triangle(4, 4);
@@ -131,11 +141,14 @@ public class ListApp {
 
 		System.out.println("=========================================");
 
-		tList.remove(t03);
+		tList.remove(t03);// 첫번째 데이터만 삭제(Removes the first occurrence of the specified element from this
+							// list)
 
 		for (int i = 0; i < tList.size(); i++) {
 			tList.get(i).draw();
 		}
+
+		System.out.println(tList.toString());
 
 	}
 
